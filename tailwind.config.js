@@ -22,7 +22,8 @@ module.exports = {
 				'orange-sec': 'rgba(182, 87, 0, 0.2)',
 				'purple-sec': 'rgba(107, 117, 219, 0.2)',
 				'green-sec': 'rgba(68, 172, 153, 0.2)',
-				'grey-sec': 'rgba(52, 58, 70, 0.2)'
+				'grey-sec': 'rgba(52, 58, 70, 0.2)',
+				'blue-sec': 'rgba(13, 108, 140, 0.2)'
 			}
 		}
 	},
