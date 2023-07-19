@@ -58,7 +58,7 @@ const HooksCards = [
 		id: 8,
 		name: 'useLayoutEffect',
 		description:
-			'Similar to useEffect, but runs synchronously after all DOM mutations. useImperativeHandle: Allows customization of the instance value exposed to parent ',
+			'Similar to useEffect, but runs synchronously after all DOM mutations. ',
 		tag: '',
 		url: '/hooks/use-layout-effect'
 	},
