@@ -1,4 +1,4 @@
-import HomeCard from '@/common/common/HomeCard';
+import HomeCard from '@/components/HomeCard';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -11,7 +11,7 @@ export default function Home() {
 				<div className=" my-10">
 					<header className="flex flex-col items-center gap-10 justify-center">
 						<div className="flex items-center gap-10">
-							<div className=" bg-bg-secondary p-2 rounded-xl w-max h-max">
+							<div className=" bg-bg-secondary p-2 rounded-2xl w-max h-max">
 								<Image
 									src={'/React-icon.png'}
 									alt={'React logo'}
@@ -42,17 +42,33 @@ export default function Home() {
 							</Link>
 						</div>
 					</header>
-					<main className="mt-36 grid gap-10 justify-between grid-cols-4 h-60">
-						<HomeCard text={'Learn Fast and Eficient'} />
-						<HomeCard text={'Everything on one place'} />
-						<HomeCard text={'Use cases for every hook'} />
-						<HomeCard text={'Read, Rewrite, Undestand, Use...'} />
+					<main className="mt-36 grid gap-10 justify-between md:grid-cols-2 sm:grid-cols-1 h-96">
+						<HomeCard
+							text={'Learn quickly and efficiently'}
+							bg={'bg-grey-sec'}
+							color={'text-white'}
+						/>
+						<HomeCard
+							text={'Everything on one place'}
+							bg={'bg-green-sec'}
+							color={'text-green-main'}
+						/>
+						<HomeCard
+							text={'Use cases for every hook'}
+							bg={'bg-purple-sec'}
+							color={'text-purple-main'}
+						/>
+						<HomeCard
+							text={'Read, rewrite, undestand, use...'}
+							bg={'bg-orange-sec'}
+							color={'text-orange-main'}
+						/>
 					</main>
 				</div>
 			</section>
-			<section className="w-screen h-screen container mx-auto">
+			{/* <section className="w-screen h-screen container mx-auto">
 				<h1 className="text-5xl">Brain Hooks</h1>
-			</section>
+			</section> */}
 		</>
 	);
 }
