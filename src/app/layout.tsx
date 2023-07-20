@@ -16,7 +16,7 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en">
-			<body className=" bg-gradient-to-r from-bg-primary to-bg-primary overflow-x-hidden">
+			<body className=" bg-bg-primary bg-gradient-to-b from-bg-primary to-bg-primary overflow-x-hidden">
 				{children}
 			</body>
 		</html>
