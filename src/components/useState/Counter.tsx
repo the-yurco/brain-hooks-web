@@ -3,13 +3,11 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 
-type Props = {};
-
-const Counter = (props: Props) => {
+const Counter = () => {
 	const [count, setCount] = useState<number>(0);
 
 	return (
-		<div className="col-start-1 col-end-2 border border-grey-main rounded-lg p-5 flex gap-5 flex-col">
+		<div className="col-start-1 col-end-2 border border-grey-main rounded-lg p-5 flex gap-5 flex-col h-96 overflow-y-scroll">
 			<h1 className="text-2xl"> 1. Keep track of the previous state</h1>
 			<div className="flex flex-col gap-3">
 				<h3 className="text-xl flex items-center gap-3">
@@ -34,10 +32,10 @@ const Counter = (props: Props) => {
 				</div>
 			</div>
 			<Image
-				src={'/react-useState.svg'}
+				src={'/counter-useState.svg'}
 				alt={''}
-				width={700}
-				height={300}
+				width={800}
+				height={800}
 			></Image>
 		</div>
 	);

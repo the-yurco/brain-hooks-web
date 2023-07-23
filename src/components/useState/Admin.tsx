@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import Image from 'next/image';
 
 const Admin = () => {
 	const [user, setUser] = useState({ isAdmin: true });
@@ -10,7 +11,7 @@ const Admin = () => {
 	};
 
 	return (
-		<div className="col-start-2 col-end-3 border border-grey-main rounded-lg p-5 flex gap-5 flex-col">
+		<div className="col-start-2 col-end-3 border border-grey-main rounded-lg p-5 flex gap-5 flex-col h-96 overflow-y-scroll">
 			<h1 className="text-2xl">2. Conditional Rendering</h1>
 			<div className=" flex flex-col gap-3">
 				{user.isAdmin ? (
@@ -49,6 +50,12 @@ const Admin = () => {
 					{user.isAdmin ? 'Make User' : 'Make Admin'}
 				</button>
 			</div>
+			<Image
+				src={'/admin-useState.svg'}
+				alt={''}
+				width={800}
+				height={800}
+			></Image>
 		</div>
 	);
 };
