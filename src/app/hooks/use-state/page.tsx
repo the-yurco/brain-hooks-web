@@ -8,6 +8,7 @@ import { useState } from 'react';
 import todoData from '@/data/todo-data.json';
 
 import Counter from '@/components/useState/Counter';
+import Admin from '@/components/useState/Admin';
 
 type Props = {};
 
@@ -38,34 +39,7 @@ const UseState = (props: Props) => {
 		<>
 			<section className="grid grid-cols-2 grid-rows-3 gap-5">
 				<Counter />
-				<div className="col-start-2 col-end-3 border border-grey-main rounded-lg p-5 flex gap-5 flex-col">
-					<h1 className="text-2xl">2. Conditional Rendering</h1>
-					<div>
-						{user.isAdmin ? (
-							<h1 className="mb-5">Admin: TRUE</h1>
-						) : (
-							<h1 className="mb-5">Admin: FALSE</h1>
-						)}
-						<table className="flex flex-col gap-2">
-							<tr className="flex gap-2">
-								<th>id</th>
-								<th>Name</th>
-								{user.isAdmin && <th>Action</th>}
-							</tr>
-							<tr className="flex gap-3">
-								<td>1.</td>
-								<td>Juraj</td>
-								{user.isAdmin && (
-									<td>
-										<button className="border rounded-lg px-2 bg-orange-main border-white text-white">
-											Edit
-										</button>
-									</td>
-								)}
-							</tr>
-						</table>
-					</div>
-				</div>
+				<Admin />
 				<div className="col-start-1 col-end-2 border border-grey-main rounded-lg p-5 flex gap-5 flex-col">
 					<h1 className="text-2xl">3. Form Handling</h1>
 					<div>
