@@ -2,73 +2,79 @@ import HomeCard from '@/components/HomeCard';
 import Image from 'next/image';
 import Link from 'next/link';
 
-import { FiArrowUpRight } from 'react-icons/fi';
-
 export default function Home() {
 	return (
 		<>
-			<section className="w-screen h-screen container mx-auto">
+			<section className="w-screen h-screen ">
 				<div className=" my-10">
-					<header className="flex flex-col items-center gap-10 justify-center">
-						<div className="flex items-center gap-10">
-							<div className=" bg-bg-secondary p-2 rounded-2xl w-max h-max">
-								<Image
-									src={'/React-icon.png'}
-									alt={'React logo'}
-									width={50}
-									height={50}
-								></Image>
-							</div>
-							<h1 className="text-5xl font-medium">Brain Hooks</h1>
-						</div>
-						<div>
-							<h3 className="text-center text-2xl">
-								You are on the right place to learn <br />
-								React Hooks in easier way
+					<div className="absolute top-0 left-0 z-10">
+						<Image
+							src={'/decoration-hero.svg'}
+							alt={''}
+							width={730}
+							height={700}
+						></Image>
+					</div>
+					<section className="flex flex-col justify-between gap-72 z-50">
+						<header className="flex gap-10 flex-col">
+							<h1 className="text-7xl font-extrabold text-black z-50">
+								Brain Hooks
+							</h1>
+							<h3 className="text-4xl font-medium z-50" id="shadow-text">
+								Welcome on site where you will find everything <br /> explained
+								through code and short docs
 							</h3>
+							<div className="flex gap-3 z-50">
+								<Link href={'/hooks'}>
+									<HomeCard
+										text={'React Hooks'}
+										bg={'bg-yellow-main'}
+										color={'text-black'}
+									/>
+								</Link>
+								<Link href={'/hooks'}>
+									<HomeCard
+										text={'Next JS features'}
+										bg={'bg-blue-main'}
+										color={'text-black'}
+									/>
+								</Link>
+								<Link href={'/hooks'}>
+									<HomeCard
+										text={'API functionalities'}
+										bg={'bg-green-main'}
+										color={'text-black'}
+									/>
+								</Link>
+								<Link href={'/hooks'}>
+									<HomeCard
+										text={'More...'}
+										bg={'bg-white'}
+										color={'text-black'}
+									/>
+								</Link>
+							</div>
+						</header>
+						<footer>
+							<h3 className="text-4xl font-medium " id="shadow-text">
+								To use this website and for full usefulness you <br /> need to
+								have some basics in React framework
+							</h3>
+						</footer>
+						<div className="absolute bottom-0 right-0 z-10">
+							<Image
+								src={'/decoration-hero2.svg'}
+								alt={''}
+								width={1030}
+								height={700}
+							></Image>
 						</div>
-						<div className="flex gap-3">
-							<Link
-								href={'/hooks'}
-								className="text-lg bg-blue-main px-6 py-2 rounded-full flex items-center gap-3 font-medium"
-							>
-								Hooks Docs <FiArrowUpRight />
-							</Link>
-							<Link
-								href={'https://react.dev/'}
-								className="text-lg bg-btn-grey  border border-gray-600 px-6 py-2 rounded-full  font-medium"
-							>
-								Hooks Docs
-							</Link>
-						</div>
-					</header>
-					<main className="mt-36 grid gap-10 justify-between md:grid-cols-2 sm:grid-cols-1 h-96">
-						<HomeCard
-							text={'Learn quickly and efficiently'}
-							bg={'bg-grey-sec'}
-							color={'text-white'}
-						/>
-						<HomeCard
-							text={'Everything on one place'}
-							bg={'bg-green-sec'}
-							color={'text-green-main'}
-						/>
-						<HomeCard
-							text={'Use cases for every hook'}
-							bg={'bg-purple-sec'}
-							color={'text-purple-main'}
-						/>
-						<HomeCard
-							text={'Read, rewrite, undestand, use...'}
-							bg={'bg-orange-sec'}
-							color={'text-orange-main'}
-						/>
-					</main>
+					</section>
 				</div>
 			</section>
-			{/* <section className="w-screen h-screen container mx-auto">
+			<section className="w-screen h-screen">
 				<h1 className="text-5xl">Brain Hooks</h1>
-			</section> */}
+			</section>
 		</>
 	);
 }

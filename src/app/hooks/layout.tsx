@@ -1,8 +1,8 @@
 import '../globals.css';
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Manrope } from 'next/font/google';
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Manrope({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
 	title: 'Create Next App',
@@ -16,7 +16,9 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en">
-			<body className=" bg-gradient-to-r from-bg-primary to-bg-primary overflow-x-hidden">
+			<body
+				className={` bg-gradient-to-r from-bg-primary to-bg-primary overflow-x-hidden ${inter.className}`}
+			>
 				<div className="w-screen h-100 container mx-auto my-10">{children}</div>
 			</body>
 		</html>

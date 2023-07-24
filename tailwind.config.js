@@ -8,17 +8,17 @@ module.exports = {
 	theme: {
 		extend: {
 			fontFamily: {
-				poppins: ['Poppins', 'sans-serif']
+				manrope: ['Manrope', 'sans-serif']
 			},
 			colors: {
-				'bg-primary': '#23272f',
+				'bg-primary': '#F2274C',
 				'bg-secondary': '#181B20',
-				'blue-main': '#0D6C8C',
+				'blue-main': '#03658C',
 				'btn-grey': '#252932',
 				'grey-main': '#343A46',
-				'orange-main': '#b65700',
+				'yellow-main': '#D99441',
 				'purple-main': '#6B75DB',
-				'green-main': '#44AC99',
+				'green-main': '#147562',
 				'orange-sec': 'rgba(182, 87, 0, 0.2)',
 				'purple-sec': 'rgba(107, 117, 219, 0.2)',
 				'green-sec': 'rgba(68, 172, 153, 0.2)',
