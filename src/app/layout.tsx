@@ -19,7 +19,7 @@ export default function RootLayout({
 			<body
 				className={` bg-gradient-to-r from-bg-primary to-bg-primary overflow-x-hidden ${inter.className}`}
 			>
-				<div className="h-100 mx-24 mt-20">{children}</div>
+				<section className="h-100 mx-24 mt-20">{children}</section>
 			</body>
 		</html>
 	);

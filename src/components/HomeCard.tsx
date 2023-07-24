@@ -11,7 +11,7 @@ const HomeCard = ({ text, bg, color }: Props) => {
 		<>
 			<section
 				className={`${bg} ${color}
-				} py-1 px-6  flex items-center justify-center rounded-full shadow-xl bg-blend-saturation border border-black`}
+				} py-2 px-6  flex items-center justify-center rounded-full shadow-xl bg-blend-saturation border border-black`}
 			>
 				<div className="flex justify-center items-center ">
 					<h1 className="text-xl text-center ">{text}</h1>
