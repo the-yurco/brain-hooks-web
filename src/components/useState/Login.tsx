@@ -59,7 +59,10 @@ const Login = () => {
 					</select>
 					<br />
 
-					<button type="submit" className="w-72 py-1 px-2 rounded-lg border">
+					<button
+						type="submit"
+						className="w-72 py-1 px-2 rounded-lg border text-md hover:bg-bg-secondary hover:border-grey-main transition-all duration-300"
+					>
 						Submit
 					</button>
 					{isSubmitting && 'Submitting...'}
