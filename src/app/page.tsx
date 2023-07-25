@@ -27,28 +27,28 @@ export default function Home() {
 							through code and short docs
 						</h3>
 						<div className="flex gap-3 z-50">
-							<Link href={'/hooks'}>
+							<Link href={'/'}>
 								<HomeCard
 									text={'React Hooks'}
 									bg={'bg-yellow-main'}
 									color={'text-black'}
 								/>
 							</Link>
-							<Link href={'/hooks'}>
+							<Link href={'/'}>
 								<HomeCard
 									text={'Next JS features'}
 									bg={'bg-blue-main'}
 									color={'text-black'}
 								/>
 							</Link>
-							<Link href={'/hooks'}>
+							<Link href={'/'}>
 								<HomeCard
 									text={'API functionalities'}
 									bg={'bg-green-main'}
 									color={'text-black'}
 								/>
 							</Link>
-							<Link href={'/hooks'}>
+							<Link href={'/'}>
 								<HomeCard
 									text={'More...'}
 									bg={'bg-white'}
@@ -72,7 +72,7 @@ export default function Home() {
 							src={'/decoration-hero2.svg'}
 						/>
 					</div>
-					<div className="absolute bottom-0 inset-x-0 h-16 bg-gradient-to-t from-bg-primary to-transparent z-50"></div>
+					<div className="absolute bottom-0 inset-x-0 h-16 bg-gradient-to-t from-bg-primary to-transparent z-30"></div>
 				</div>
 			</section>
 			<section className="h-screen relative flex items-center justify-center">
@@ -104,7 +104,7 @@ export default function Home() {
 						src={'/decoration-cards.svg'}
 					/>
 				</div>
-				<div className="absolute bottom-0 inset-x-0 h-16 bg-gradient-to-t from-bg-primary to-transparent z-50"></div>
+				<div className="absolute bottom-0 inset-x-0 h-16 bg-gradient-to-t from-bg-primary to-transparent z-30"></div>
 			</section>
 			<section className="h-screen relative flex items-center justify-center">
 				<div className="h-100 w-100 flex flex-col gap-24 items-center justify-center z-50">
