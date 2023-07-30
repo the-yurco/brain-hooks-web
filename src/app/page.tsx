@@ -27,7 +27,7 @@ export default function Home() {
 							through code and short docs
 						</h3>
 						<div className="flex gap-3 z-50">
-							<Link href={'/'}>
+							<Link href={'/hooks'}>
 								<HomeCard
 									text={'React Hooks'}
 									bg={'bg-yellow-main'}
